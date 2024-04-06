@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #dfe9f5;
+}
+.wrapper{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 2rem;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+}
+form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: #e4e4e4;
+}
+button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(17, 107, 143);
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background: rgba(17, 107, 143, 0.877);
+}
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.terms{
+    margin-top: 0.2rem;
+}
+.terms input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.terms label{
+    font-size: 0.7rem;
+}
+.terms a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.member1{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member1 a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+    text-decoration: none;
+    color: #464647;
+}
+
+
+
+
+
+#body1{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .stopwatch-container {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stopwatch {
+    text-align: center;
+  }
+  
+  .display {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #startBtn{
+    font-size: 1rem;
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #00ff08;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  #stopBtn{
+    font-size: 1rem;
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #00ff08;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  #resetBtn{
+    font-size: 1rem;
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #00ff08;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startBtn:hover {
+    background-color: #000000;
+  }
+  #stopBtn:hover {
+    background-color: #000000;
+  }
+  #resetBtn:hover {
+    background-color: #000000;
+  }
+
+
+
+
+
+
+
+  #body2{
+    background: cyan;
+  }
+  .container1{
+    width: 500px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: #fff;
+    border-radius: 10px;
+  }
+  .container1 p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  #qrBtn{
+    width: 200px;
+    height: 40px;
+    background: #00ff0d;
+    color: #000000;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgb(134, 134, 134);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  #qrBtn:hover{
+    background: rgba(176, 218, 173, 0.877);
+  }
+  #imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+  }
+  #imgBox img{
+    width: 100%;
+    padding: 10px;
+  }
+  #qrText{
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+  }

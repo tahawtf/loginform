@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form action="#">
+            <input type="email" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <div class="recover">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+        <button onclick="func()">Sign in</button>
+        <div class="member">
+            Not a member? <a href="./signup.html">
+                Register Now
+            </a>
+            <div class="member1">
+                Try it now! <a href="./stopwatch.html">
+                    Stopwatch
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function func(){
+        var email=document.getElementById("username").value;
+        var pass=document.getElementById("password").value;
+        if(email=="username" && pass=="password"){
+            alert("Welcome! You are successfully logged in.");
+            window.location.assign("qrcode.html")
+        }
+        else{
+            alert("Correct information is 'password' for Password and 'username' for Username. Please try again.")
+        }
+    }
+    </script>
+</body>
+</html>

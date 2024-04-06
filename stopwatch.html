@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Stopwatch</title>
+</head>
+<body id="body1">
+<div class="stopwatch-container">
+    <div class="stopwatch">
+      <div class="display">00:00:00:00</div>
+      <button id="startBtn">Start</button><br>
+      <button id="stopBtn">Stop</button><br>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+    <script>
+    let timer;
+    let milliseconds = 0;
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+
+    function startTimer() {
+    timer = setInterval(updateDisplay, 10);
+    }
+
+    function stopTimer() {
+    clearInterval(timer);
+    }
+
+    function resetTimer() {
+    clearInterval(timer);
+    milliseconds = 0;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    updateDisplay();
+    }
+
+    function updateDisplay() {
+    milliseconds++;
+    if (milliseconds === 100) {
+    milliseconds = 0;
+    seconds++;
+    if (seconds === 60) {
+      seconds = 0;
+      minutes++;
+      if (minutes === 60) {
+        minutes = 0;
+        hours++;
+      }
+    }
+  }
+    const display = document.querySelector('.display');
+    display.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}:${milliseconds.toString().padStart(2, '0')}`;
+    }
+
+    document.getElementById('startBtn').addEventListener('click', startTimer);
+    document.getElementById('stopBtn').addEventListener('click', stopTimer);
+    document.getElementById('resetBtn').addEventListener('click', resetTimer);
+    </script>
+</body>
+</html>
